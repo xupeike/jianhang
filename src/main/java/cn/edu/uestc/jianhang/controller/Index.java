@@ -10,5 +10,6 @@ package cn.edu.uestc.jianhang.controller;
  * (^_^)
  */
 public class Index {
+	aaaa
 
 }
