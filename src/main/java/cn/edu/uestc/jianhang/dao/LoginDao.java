@@ -5,7 +5,7 @@
  */
 package cn.edu.uestc.jianhang.dao;
 
-import cn.edu.uestc.jianhang.entity.AccountInfo;
+import cn.edu.uestc.jianhang.entity.User;
 
 /**
  * @author 徐佩珂
@@ -18,7 +18,7 @@ public interface LoginDao {
 	 * @param accountInfo
 	 * @return
 	 */
-	AccountInfo selectByAccountInfo(AccountInfo accountInfo);
+	User selectByAccountInfo(User user);
 	
 	
 	
