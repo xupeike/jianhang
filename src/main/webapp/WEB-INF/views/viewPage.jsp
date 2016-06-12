@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>无标题文档</title>
-<script language="javascript" src="../assets/js/js.js"></script>
-<script language="JavaScript" src="../assets/js/dialog/lhgcore.js" type="text/javascript"></script>
-<script language="JavaScript" src="../assets/js/dialog/lhgdialog/lhgdialog.js" type="text/javascript"></script>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/assets/js/js.js"></script>
+<script language="JavaScript" src="/assets/js/dialog/lhgcore.js" type="text/javascript"></script>
+<script language="JavaScript" src="/assets/js/dialog/lhgdialog/lhgdialog.js" type="text/javascript"></script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" charset="UTF-8">
         function showDialog(pageName) {
             J.dialog.get({ id: 'showDialog', title: '操作', page: pageName, cover: true,height:170,width:400 });

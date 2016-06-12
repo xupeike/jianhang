@@ -5,14 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>物品退货详情</title>
-<script language="javascript" src="../assets/js/js.js"></script>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
-<script language="javascript" src="../assets/js/js.js"></script>
-<script type="text/javascript" language="javascript">
-    function showdiv(){
-        document.getElementById('hiddiv').style.display='block';
-    }
-</script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="js/js.js"></script>
 </head>
 
 <body>
@@ -72,12 +66,11 @@
     <td colspan="3">剩余太多</td>
   </tr>
   <tr>
-    <td colspan="4" align="center">
-    <input type="button" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" value="受 理" onclick="showdiv()"/></td>
+    <td colspan="4" style="height:10px;padding:0; background-color:#E0E0E0;">&nbsp;</td>
   </tr>
 </table>
-<div class="detailcombottom">当前所处状态：待受理</div>
-<div style="margin-top:15px; display:none;" id="hiddiv">
+<div class="detailcombottom">当前所处状态：已受理</div>
+<div style="margin-top:15px;" id="hiddiv">
   <table class="table11" style="width:60%;">
     <tr>
       <th>批 次</th>
@@ -89,20 +82,15 @@
       <td>20110225-00011</td>
       <td>￥20.00</td>
       <td>100</td>
-      <td style="text-align:center;">
-        <input type="text" name="textfield" size="3"/>      </td>
+      <td style="text-align:center;">60</td>
     </tr>
     <tr>
       <td>20110225-00010</td>
       <td>￥15.50</td>
       <td>30</td>
-      <td style="text-align:center;"><input type="text" name="textfield2" size="3"/></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align:center;"><input name="button" type="button" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" value="受理完毕" onclick="jumpto(&quot;returnTracking.jsp&quot;)"/></td>
+      <td style="text-align:center;">10</td>
     </tr>
   </table>
-</div>
 </div>
 </div>
 </body>

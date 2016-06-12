@@ -4,8 +4,8 @@
     
 <mapper namespace="cn.edu.uestc.jianhang.dao.LoginDao">
 
-	<select id="selectByAccountInfo" parameterType="AccountInfo" resultType="AccountInfo">
-		select * from employee where account_id
+	<select id="selectByAccountInfo" parameterType="String" resultType="User">
+		select * from user where account={account}
 	</select>
 	
 

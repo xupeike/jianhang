@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>流程监控</title>
-<script language="javascript" src="../assets/js/js.js"></script>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/assets/js/js.js"></script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <table class="table11" cellpadding="0" cellspacing="0" style="margin:0px auto;margin-top:15px;">
@@ -20,7 +20,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="8" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待办理</th>
+      <th colspan="8" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待办理</th>
     </tr>
     <tr>
       <th style="width:80px;">状态</th>
@@ -76,7 +76,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="8" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">关注中</th>
+      <th colspan="8" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">关注中</th>
     </tr>
     <tr>
       <th>状态</th>
@@ -152,7 +152,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="8" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">受理完毕</th>
+      <th colspan="8" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">受理完毕</th>
     </tr>
     <tr>
       <th>状态</th>

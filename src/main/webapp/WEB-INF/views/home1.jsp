@@ -10,18 +10,18 @@
 	    <!-- Prevents caching at the Proxy Server -->
 	    <meta http-equiv="Expires" content="0"/>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	    <link rel="icon" href="../assets/images/favicon.ico"/>
-	    <link rel="stylesheet" type="text/css" href="../assets/css/ext-all.css"/>
-	    <script type="text/javascript" src="../assets/js/ext/ext-base.js"></script>
-	    <script type="text/javascript" src="../assets/js/ext/ext-all.js"></script>
-	    <script type="text/javascript" src="../assets/js/ext/ext-lang-zh_CN.js"></script>
+	    <link rel="icon" href="/assets/images/favicon.ico"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/ext-all.css"/>
+	    <script type="text/javascript" src="/assets/js/ext/ext-base.js"></script>
+	    <script type="text/javascript" src="/assets/js/ext/ext-all.js"></script>
+	    <script type="text/javascript" src="/assets/js/ext/ext-lang-zh_CN.js"></script>
 	    <script type="text/javascript">
-	        Ext.BLANK_IMAGE_URL = '../assets/img/s.gif';
+	        Ext.BLANK_IMAGE_URL = '/assets/img/s.gif';
 	    </script>
-	    <link href="../assets/styles/messages.css" rel="stylesheet" type="text/css">
+	    <link href="/assets/styles/messages.css" rel="stylesheet" type="text/css">
 	    <title>运行保障管理系统</title>
-	    <link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
-	    <script language="javascript" src="../assets/js/Clock.js"></script>
+	    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css"/>
+	    <script language="javascript" src="/assets/js/Clock.js"></script>
 	</head>
 	<body>
 	<div id="loading-mask" style=""></div>
@@ -31,11 +31,11 @@
 	    <script language="javascript" src="./menuManager.js"></script>
 	    <div id="north">
 	        <span>
-	            <div height="90" class="api-title" style="background: url('../assets/images/top_bg.jpg') repeat-x; height:90px">
+	            <div height="90" class="api-title" style="background: url('/assets/images/top_bg.jpg') repeat-x; height:90px">
 	                
-	                <img src="../assets/images/top.gif">
+	                <img src="/assets/images/top.gif">
 	            </div>
-	            <div height="20" style="background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;font-size:10pt;">
+	            <div height="20" style="background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;font-size:10pt;">
 	                <div style="float:left;margin:0 0 0 10px;font:normal 12px tahoma, arial, sans-serif;color:#ffffff;">
 	                    <label id="nowDateTime">&nbsp;</label>
 	                </div>

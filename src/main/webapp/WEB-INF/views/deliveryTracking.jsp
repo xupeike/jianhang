@@ -5,9 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>配送清单</title>
-<script language="javascript" src="../assets/js/js.js"></script>
-<script language="JavaScript" src="../assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/assets/js/js.js"></script>
+<script language="JavaScript" src="/assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <form name="myform1" method="post">
@@ -20,7 +20,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="5" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待确认</th>
+      <th colspan="5" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待确认</th>
     </tr>
     <tr>
       <th style="text-align:center;">订单号</th>
@@ -75,7 +75,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="5" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待配货</th>
+      <th colspan="5" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待配货</th>
     </tr>
     <tr>
       <th>订购单位</th>
@@ -137,7 +137,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="5" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待发货</th>
+      <th colspan="5" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待发货</th>
     </tr>
     <tr>
       <th style="text-align:center;">序 号</th>
@@ -199,7 +199,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="5" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">已完成</th>
+      <th colspan="5" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">已完成</th>
     </tr>
     <tr>
       <th style="text-align:center;">配送号</th>

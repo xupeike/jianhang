@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>运行保障系统登录</title>
-<link rel="stylesheet" type="text/css" href="assets/css/login.css" />
+<link rel="stylesheet" type="text/css" href="/assets/styles/login.css" />
 </head>
 <body>
 	<form id="form1" action="server">
@@ -25,8 +25,8 @@
                               <input name="account" type="text" style="width:100px; height:22px;">
                       </td>
                         <td rowspan="3" class="LoginTbRight">
-						<a href="/home.jsp">
-							<img src="assets/image/BtnLogin.gif" name="Image1" border="0" id="Image1">
+						<a href="/views/home.jsp">
+							<img src="/assets/images/BtnLogin.gif" name="Image1" border="0" id="Image1">
 					    </a>                       
 					  </td>
                     </tr>

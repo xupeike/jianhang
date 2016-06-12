@@ -5,9 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>物品退货详情</title>
-<script language="javascript" src="../assets/js/js.js"></script>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
-<script language="javascript" src="../assets/js/js.js"></script>
+<script language="javascript" src="/assets/js/js.js"></script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/assets/js/js.js"></script>
 <script type="text/javascript" language="javascript">
     function showdiv(){
         document.getElementById('hiddiv').style.display='block';

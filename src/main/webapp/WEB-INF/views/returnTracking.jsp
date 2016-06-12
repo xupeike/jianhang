@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>退货清单</title>
 <script language="javascript" src="js/js.js"></script>
-<script language="JavaScript" src="../assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="/assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="services">
@@ -24,7 +24,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="8" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待受理</th>
+      <th colspan="8" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">待受理</th>
     </tr>
     <tr>
       <th>状态</th>
@@ -81,7 +81,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="8" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">关注中</th>
+      <th colspan="8" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">关注中</th>
     </tr>
     <tr>
       <th>状态</th>
@@ -138,7 +138,7 @@
       <th style="width:50px;padding:0;"></th>
     </tr>
     <tr>
-      <th colspan="8" style="text-align:center;color:#ffffff;background: url('../assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">受理完毕</th>
+      <th colspan="8" style="text-align:center;color:#ffffff;background: url('/assets/images/menu_bg.jpg') repeat-x;height:20px;padding:0;">受理完毕</th>
     </tr>
     <tr>
       <th>状态</th>

@@ -5,9 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>物品流程监控</title>
-<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
-<script language="javascript" src="../assets/js/js.js"></script>
-<script language="JavaScript" src="../assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/assets/js/js.js"></script>
+<script language="JavaScript" src="/assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
 </head>
 <body>
 <div style="text-align:left;margin-top:15px; float:left;width:100%;">
