@@ -18,7 +18,7 @@ public interface LoginDao {
 	 * @param accountInfo
 	 * @return
 	 */
-	User selectByAccountInfo(User user);
+	User selectByAccountInfo(String account);
 	
 	
 	
