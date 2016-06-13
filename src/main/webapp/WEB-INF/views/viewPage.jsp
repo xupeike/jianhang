@@ -28,11 +28,11 @@
 </head>
 <body onload="showbutton()">
 <div style="text-align:center;margin-top:15px;">
-  <input type="button" class="btn" onclick="showDialog('remarks5.html');" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" value="批示"/>
+  <input type="button" class="btn" onclick="showDialog('remarks6.html');" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" value="批示"/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <input type="button" name="Submit2" value="返 回" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" onclick="javascript:history.go(-1);"/>
 <br />
-根据角色和部门显示或隐藏按钮只有上报的人才能回收待审核的事务，要初审的事务才能驳回</div>
+</div>
 <table class="table11" style="width:80%; line-height:25px;">
   <tr>
     <th style="text-align:right;">当前处理部门</th>

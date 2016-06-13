@@ -28,7 +28,7 @@
 	<div id="loading">
 	    <div class="loading-indicator">
 	    </div>
-	    <script language="javascript" src="./menuManager.js"></script>
+	    <script language="javascript" src="/assets/js/menuManager.js"></script>
 	    <div id="north">
 	        <span>
 	            <div height="90" class="api-title" style="background: url('/assets/images/top_bg.jpg') repeat-x; height:90px">
