@@ -23,6 +23,15 @@ public class User {
 	private int deptId;
 	private String account;
 	private String password;
+	
+	private String msg;
+	
+	public String getMsg() {
+		return msg;
+	}
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
 	public int getUserId() {
 		return userId;
 	}

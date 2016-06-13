@@ -1,5 +1,6 @@
 package cn.edu.uestc.jianhang.controller;
 
+import javax.security.auth.login.LoginException;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -30,12 +31,17 @@ public class LoginController {
 			}
 			
 			User us = userinfoservice.login(user);
+			if(us==null){
+				session.setAttribute("msg", us.getMsg());
+				throw new LoginException();
+			}
 			
 			session.setAttribute("user", us);
-			System.out.println(us.getPassword()+"-----------");
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception
+			return "forward:/login.jsp";
 		}
 		//res.sendRedirect(arg0);
 		return "home1";

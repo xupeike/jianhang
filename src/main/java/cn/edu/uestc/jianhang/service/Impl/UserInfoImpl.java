@@ -15,17 +15,21 @@ public class UserInfoImpl implements UserInfoService {
 	@Autowired
 	private LoginDao logindao;
 	
-	public User login(User user) throws LoginException{
+	public User login(User user){
+		
+		
 		
 		User us = logindao.selectByAccountInfo(user.getAccount());
 		
 		if(us == null){
-			throw new LoginException("ÓÃ»§Ãû²»´æÔÚ!");
+			us.setMsg("ç”¨æˆ·åä¸å­˜åœ¨!è¯·é‡æ–°ç™»é™†");
+			
 		}else if(!us.getPassword().equals(user.getPassword())){
-			throw new LoginException("ÃÜÂë²»ÕıÈ·!");
+			us.setMsg("å¯†ç ä¸æ­£ç¡®!è¯·é‡æ–°ç™»é™†");
+			return null;
 		}
 		
-		System.out.println("0.0.0.0.0.0.0.0.0");
+		
 		return us;
 	}
 }
