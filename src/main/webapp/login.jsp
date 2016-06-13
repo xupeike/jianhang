@@ -9,6 +9,7 @@
 <style>
 	.btn{height:47px;width:82px;
 background: transparent url('/assets/images/BtnLogin.gif') no-repeat; }
+	.error{color:red!important;font-size:18px;position:absolute;top:360px;left:585px;font-weight: 5;}
 </style>
 </head>
 <body>
@@ -47,6 +48,9 @@ background: transparent url('/assets/images/BtnLogin.gif') no-repeat; }
         </div>
     </div>
     </form>
-
+   <% String msg = (String)session.getAttribute("msg"); %>
+   <%if(msg!=null){ %>
+    <span class="error"><%=msg %></span>
+	<%} %>
 </body>
 </html>

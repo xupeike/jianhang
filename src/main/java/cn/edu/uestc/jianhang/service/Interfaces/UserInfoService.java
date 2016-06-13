@@ -8,5 +8,5 @@ import cn.edu.uestc.jianhang.entity.User;
 
 public interface UserInfoService {
 	
-	User login(User user) throws LoginException;
+	User login(User user);
 }

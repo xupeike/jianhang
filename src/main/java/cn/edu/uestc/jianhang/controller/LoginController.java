@@ -6,45 +6,35 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-
 
 import cn.edu.uestc.jianhang.entity.User;
 import cn.edu.uestc.jianhang.service.Interfaces.UserInfoService;
 
 @Controller
 public class LoginController {
-	
+
 	@Autowired
-	private UserInfoService userinfoservice;
-	
+	private UserInfoService userInfoService;
+
 	@RequestMapping("/login1")
-	public String login(@ModelAttribute("user") User user,  BindingResult br, HttpSession session){
+	public String login(@ModelAttribute("user") User user,  BindingResult br, HttpSession session) {
+
+		/*
+		 * if (br.hasErrors()){ return "forward:/login"; }
+		 */
+
+		User us = userInfoService.login(user);
 		
-		try {
-			
-			if (br.hasErrors()){
-				return "forward:/login";
-			}
-			
-			User us = userinfoservice.login(user);
-			if(us==null){
-				session.setAttribute("msg", us.getMsg());
-				throw new LoginException();
-			}
-			
-			session.setAttribute("user", us);
-			
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			return "forward:/login.jsp";
+		if(us.getAccount()==null){
+			session.setAttribute("msg", us.getMsg());
+			return "redirect:login.jsp";
 		}
-		//res.sendRedirect(arg0);
 		return "home1";
 	}
 
+	
 }

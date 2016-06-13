@@ -24,6 +24,7 @@
 	    <script language="javascript" src="/assets/js/Clock.js"></script>
 	</head>
 	<body>
+	
 	<div id="loading-mask" style=""></div>
 	<div id="loading">
 	    <div class="loading-indicator">
@@ -40,7 +41,7 @@
 	                    <label id="nowDateTime">&nbsp;</label>
 	                </div>
 	                <div style="float:right;margin:0 5px 0 0;font:normal 12px tahoma, arial, sans-serif;color:#ffffff;">
-	                    [欢迎]&nbsp; 系统&nbsp;&nbsp;系统管理员 &nbsp;&nbsp;<a href="#" onClick="window.top.location.href = 'login.html';">【退出】</a>
+	                    <span class="error">${msg}</span> [欢迎]&nbsp; 系统&nbsp;&nbsp;系统管理员 &nbsp;&nbsp;<a href="#" onClick="window.top.location.href = 'login.html';">【退出】</a>
 	                </div>
 	            </div>
 	        </span>

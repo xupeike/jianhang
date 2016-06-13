@@ -26,6 +26,10 @@ public class User {
 	
 	private String msg;
 	
+	
+
+	
+	
 	public String getMsg() {
 		return msg;
 	}
@@ -58,8 +62,11 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", deptId=" + deptId + ", account=" + account + "]";
+		return "User [userId=" + userId + ", deptId=" + deptId + ", account=" + account + ", password=" + password
+				+ ", msg=" + msg + "]";
 	}
+	
+	
 	
 	
 }

@@ -11,25 +11,24 @@ import cn.edu.uestc.jianhang.service.Interfaces.UserInfoService;
 
 @Service
 public class UserInfoImpl implements UserInfoService {
-	
+
 	@Autowired
 	private LoginDao logindao;
-	
-	public User login(User user){
-		
-		
-		
+
+	public User login(User user) {
 		User us = logindao.selectByAccountInfo(user.getAccount());
 		
-		if(us == null){
-			us.setMsg("用户名不存在!请重新登陆");
+		if (us == null) {
+			us= new User();
+			us.setMsg("此账号不存在!请重新登陆");
 			
-		}else if(!us.getPassword().equals(user.getPassword())){
+			
+		} else if(!us.getPassword().equals(user.getPassword())) {
+			us.setAccount(null);	
 			us.setMsg("密码不正确!请重新登陆");
-			return null;
 		}
 		
-		
+
 		return us;
 	}
 }

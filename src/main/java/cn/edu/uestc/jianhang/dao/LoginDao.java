@@ -19,7 +19,4 @@ public interface LoginDao {
 	 * @return
 	 */
 	User selectByAccountInfo(String account);
-	
-	
-	
 }
