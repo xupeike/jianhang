@@ -3,18 +3,19 @@ package cn.edu.uestc.jianhang.service.Impl;
 import javax.security.auth.login.LoginException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import cn.edu.uestc.jianhang.dao.LoginDao;
 import cn.edu.uestc.jianhang.entity.User;
 import cn.edu.uestc.jianhang.service.Interfaces.UserInfoService;
 
+@Service
 public class UserInfoImpl implements UserInfoService {
 	
 	@Autowired
 	private LoginDao logindao;
 	
-	@Override
-	User login(User user) throws LoginException{
+	public User login(User user) throws LoginException{
 		
 		User us = logindao.selectByAccountInfo(user.getAccount());
 		
@@ -24,7 +25,7 @@ public class UserInfoImpl implements UserInfoService {
 			throw new LoginException("ÃÜÂë²»ÕýÈ·!");
 		}
 		
-		
+		System.out.println("0.0.0.0.0.0.0.0.0");
 		return us;
 	}
 }

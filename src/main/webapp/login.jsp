@@ -12,7 +12,7 @@ background: transparent url('/assets/images/BtnLogin.gif') no-repeat; }
 </style>
 </head>
 <body>
-	<form id="form1" action="server">
+	<form id="form1" action="/login1" modelAttribute="user" method="post">
     <div class="LoginBottomBg">
         <div class="LoginTopBg">
             <div class="LoginBox">

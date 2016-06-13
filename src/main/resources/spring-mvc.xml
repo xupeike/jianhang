@@ -19,16 +19,6 @@
 	<context:component-scan base-package="cn.edu.uestc.jianhang.controller" />
 	
 	
-	<!-- 拦截器 -->
-	<mvc:interceptors>
-		<mvc:interceptor>
-			<!-- /u/18/home 
-			<mvc:mapping path="/u/**" />
-			<bean class="com.hwadee.weibo.interceptor.AuthInterceptor" ></bean>
-			-->
-		</mvc:interceptor>
-	</mvc:interceptors>
-	
 	<!-- 视图 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
