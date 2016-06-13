@@ -33,6 +33,7 @@ public class LoginController {
 			session.setAttribute("msg", us.getMsg());
 			return "redirect:login.jsp";
 		}
+		session.setAttribute("user", us);
 		return "home1";
 	}
 
