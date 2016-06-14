@@ -111,7 +111,7 @@ Ext.onReady(function() {
             'click':function(node, event) {
                 event.stopEvent();
                 var n = tab.getComponent(node.id);
-                var url = 'demandsProcess.jsp';
+                var url = 'index4';
                 if (!n) { //判断是否已经打开该面板
                     n = actionFn(node, url);
                 } else {
@@ -647,7 +647,7 @@ Ext.onReady(function() {
             'click':function(node, event) {
                 event.stopEvent();
                 var n = tab.getComponent(node.id);
-                var url = 'notice.jsp';
+                var url = 'index5';
                 if (!n) { //判断是否已经打开该面板
                     n = actionFn(node, url);
                 } else {

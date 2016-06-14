@@ -44,4 +44,26 @@ public class index1 {
 		
 		return "personalSetup";
 	}
+	
+	@RequestMapping("/index4")
+	public String index4() {
+
+		/*
+		 * if (br.hasErrors()){ return "forward:/login"; }
+		 */
+
+		
+		return "demandsProcess";
+	}
+	
+	@RequestMapping("/index5")
+	public String index5() {
+
+		/*
+		 * if (br.hasErrors()){ return "forward:/login"; }
+		 */
+
+		
+		return "notice";
+	}
 }
