@@ -75,7 +75,7 @@
   </tr>
   <tr>
     <td align="right">事务备注</td>
-    <td colspan="5"><input type="text" name=transremarks /> </td>
+    <td colspan="5"><textarea rows="3" cols="100" name=transremarks ></textarea> </td>
   </tr>
   <tr>
     <td align="right">需求事项描述</td>
