@@ -7,7 +7,7 @@ var tab = new Ext.TabPanel({
     minTabWidth: 115,
     tabWidth:135,
     enableTabScroll:true,
-    html:'<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="transQuery.jsp"></iframe>'
+    html:'<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="/index1"></iframe>'
 });
 
 var randomNum = Math.round(Math.random()*10000);
@@ -18,7 +18,7 @@ function actionFn(node, url) {
         'id':node.id,
         'title':node.text,
         closable:true,  //通过html载入目标页
-        html:'<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="' + url + '"></iframe>'
+        html:'<iframe scrolling="auto" frameborder="0" width="100%" height="100%" src="/' + url + '"></iframe>'
     });
 }
 
@@ -275,7 +275,7 @@ Ext.onReady(function() {
             'click':function(node, event) {
                 event.stopEvent();
                 var n = tab.getComponent(node.id);
-                var url = 'transQuery.jsp';
+                var url = 'index1';
                 if (!n) { //判断是否已经打开该面板
                     n = actionFn(node, url);
                 } else {
@@ -338,7 +338,7 @@ Ext.onReady(function() {
             'click':function(node, event) {
                 event.stopEvent();
                 var n = tab.getComponent(node.id);
-                var url = 'demandReport.jsp';
+                var url = 'index2';
                 if (!n) { //判断是否已经打开该面板
                     n = actionFn(node, url);
                 } else {
