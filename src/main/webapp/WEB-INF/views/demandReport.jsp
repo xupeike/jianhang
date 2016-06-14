@@ -27,27 +27,55 @@
     <td align="right">事务明细</td>
     <td colspan="3">
 	<select name="smalllocation">
+		<option value="-1" selected="selected">请选择</option>
+        <option value="1">网点</option>
+        <option value="2">办公</option>
+		<option value="3">电子</option>
     </select>	</td>
   </tr>
   <tr>
     <td align="right">服务保障级别</td>
-    <td>二级</td>
-    <td align="right">是否初审</td>
-    <td>否</td>
+    <td>
+    <select name="serprolev" >
+        <option value="-1" selected="selected">请选择</option>
+        <option value="1">一级</option>
+        <option value="2">二级</option>
+		<option value="3">三级</option>
+      </select>
+    </td>
     <td align="right">需求处理部门</td>
-    <td>办公室</td>
+    <td>
+    <select name="reqdep" >
+        <option value="-1" selected="selected">请选择</option>
+        <option value="1">网管中心</option>
+        <option value="2">配送中心</option>
+		<option value="3">人事部门</option>
+      </select>
+      </td>
+      <td align="right">是否初审</td>
+    <td>
+    <select  >
+        <option value="-1" selected="selected">请选择</option>
+        <option value="1">是</option>
+        <option value="2">否</option>
+      </select>
+      </td>
   </tr>
   <tr>
     <td align="right">服务响应时间</td>
-    <td>3.5小时 </td>
+    <td>
+    	<input type="text" name=serresptime />
+    </td>
     <td align="right">服务解决时限</td>
-    <td>15.0工作日 </td>
+    <td>
+    	<input type="text" name=serresoltime />
+    </td>
     <td align="right">&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td align="right">事务备注</td>
-    <td colspan="5">需进入固定资产申报程序的事项：绵阳分行可自行决定购买的20个工作日，需上报省分行批准40工作日。 </td>
+    <td colspan="5"><textarea rows="3" cols="100" name=transremarks ></textarea> </td>
   </tr>
   <tr>
     <td align="right">需求事项描述</td>

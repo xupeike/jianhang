@@ -41,7 +41,7 @@
 	                    <label id="nowDateTime">&nbsp;</label>
 	                </div>
 	                <div style="float:right;margin:0 5px 0 0;font:normal 12px tahoma, arial, sans-serif;color:#ffffff;">
-	                    <span class="error">${msg}</span> [欢迎]&nbsp; 系统&nbsp;&nbsp;系统管理员 &nbsp;&nbsp;<a href="#" onClick="window.top.location.href = 'login.html';">【退出】</a>
+	                    <span class="error">${msg}</span> [欢迎]&nbsp; 系统&nbsp;&nbsp;系统管理员 &nbsp;&nbsp;<a href="#" onClick="window.top.location.href = '/login.jsp';">【退出】</a>
 	                </div>
 	            </div>
 	        </span>
