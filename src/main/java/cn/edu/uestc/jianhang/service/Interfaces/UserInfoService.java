@@ -9,4 +9,14 @@ import cn.edu.uestc.jianhang.entity.User;
 public interface UserInfoService {
 	
 	User login(User user);
+	/**
+	 * 密码修改
+	 * @Title: changePsw
+	 * @Description: TODO
+	 * @param user
+	 * @return
+	 * @throws Exception
+	 * @return: int
+	 */
+	boolean changePsw(User user);
 }

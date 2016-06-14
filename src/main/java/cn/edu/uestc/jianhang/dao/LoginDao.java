@@ -19,4 +19,14 @@ public interface LoginDao {
 	 * @return
 	 */
 	User selectByAccountInfo(String account);
+	
+	/**
+	 * 
+	 * @Title: updatePsw
+	 * @Description: TODO
+	 * @param user
+	 * @return
+	 * @return: int
+	 */
+	boolean updatePsw(User user);
 }

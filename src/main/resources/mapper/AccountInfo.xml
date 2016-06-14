@@ -8,5 +8,10 @@
 		select * from user where account=#{account}
 	</select>
 	
+	<update id="updatePsw" parameterType="User" keyProperty="user">
+		UPDATE user
+		SET password=#{password}
+		WHERE account=#{account}
+	</update>
 
 </mapper>

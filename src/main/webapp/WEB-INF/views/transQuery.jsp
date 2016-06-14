@@ -44,7 +44,7 @@
       <td>2011-01-28 15:26:23 </td>
       <td>1次</td>
       <td>2011-01-27 09:26:23 </td>
-      <td><a href="viewPage.jsp">办理</a></td>
+      <td><a href="/banli">办理</a></td>
     </tr>
     <tr>
       <td>待响应</td>
@@ -54,7 +54,7 @@
       <td><font style="color:#FF0000;">2011-02-27 09:45:10</font></td>
       <td>2次</td>
       <td>2011-01-26 11:26:23 </td>
-      <td><a href="viewPage.jsp">办理</a></td>
+      <td><a href="/banli">办理</a></td>
     </tr>
     <tr>
       <td>待处理</td>
@@ -64,7 +64,7 @@
       <td>2011-01-26 16:24:03 </td>
       <td >0次</td>
       <td>2011-01-25 15:26:23 </td>
-      <td><a href="viewPage.jsp">办理</a></td>
+      <td><a href="/banli">办理</a></td>
     </tr>
 </table>
 </body>

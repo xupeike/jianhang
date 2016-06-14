@@ -13,7 +13,7 @@ import cn.edu.uestc.jianhang.entity.User;
 public class index1 {
 	
 	@RequestMapping("/index1")
-	public String login(HttpSession session) {
+	public String login() {
 
 		/*
 		 * if (br.hasErrors()){ return "forward:/login"; }
@@ -21,5 +21,27 @@ public class index1 {
 
 		
 		return "transQuery";
+	}
+	
+	@RequestMapping("/index2")
+	public String login1() {
+
+		/*
+		 * if (br.hasErrors()){ return "forward:/login"; }
+		 */
+
+		
+		return "demandReport";
+	}
+	
+	@RequestMapping("/index3")
+	public String update1() {
+
+		/*
+		 * if (br.hasErrors()){ return "forward:/login"; }
+		 */
+
+		
+		return "personalSetup";
 	}
 }

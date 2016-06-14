@@ -36,6 +36,24 @@ public class LoginController {
 		session.setAttribute("user", us);
 		return "home1";
 	}
-
+	
+	@RequestMapping("/update")
+	public String updateInfo(@ModelAttribute("user") User user,HttpSession session){
+		
+		System.out.println(user.getPassword());
+		
+		User us = (User)session.getAttribute("user");
+		if(us.getPassword().equals(user.getPassword())){
+			String msg1="密码修改失败，请重新操作!";
+			session.setAttribute("msg1", msg1);
+			return "personalSetup";
+		}
+		user.setAccount(us.getAccount());
+		
+		
+		boolean r = userInfoService.changePsw(user);
+		
+		return "transQuery";
+	}
 	
 }

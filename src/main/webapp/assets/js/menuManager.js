@@ -609,7 +609,7 @@ Ext.onReady(function() {
             'click':function(node, event) {
                 event.stopEvent();
                 var n = tab.getComponent(node.id);
-                var url = 'personalSetup.jsp';
+                var url = 'index3';
                 if (!n) { //判断是否已经打开该面板
                     n = actionFn(node, url);
                 } else {

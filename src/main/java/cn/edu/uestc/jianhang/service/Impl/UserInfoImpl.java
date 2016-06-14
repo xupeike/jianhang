@@ -31,4 +31,25 @@ public class UserInfoImpl implements UserInfoService {
 
 		return us;
 	}
+	
+	/**密码修改
+	 * @Title: changePsw
+	 * @Description: TODO
+	 * @param user
+	 * @return
+	 * @throws Exception
+	 * @see cn.edu.uestc.jianhang.service.interfaces.UserService#changePsw(cn.edu.uestc.jianhang.entity.User)
+	 */
+	public boolean changePsw(User user) {
+		
+		boolean r = logindao.updatePsw(user);
+		
+		if ( r ){
+			System.out.println("修改密码成功！！！");
+		} else {
+			System.out.println("修改密码失败！！！");
+		}
+		
+		return r;
+	}
 }

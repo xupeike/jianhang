@@ -9,7 +9,7 @@
 <script language="javascript" src="/assets/js/js.js"></script>
 </head>
 <body>
-    <form action="psw" method="post">
+    <form action="/update" method="post" modelAttribute="user">
         <div style="width:30%;margin: 0 auto; margin-top:15px; ">
 		  <table class="table11">
 		    <tr>
