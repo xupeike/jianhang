@@ -6,10 +6,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>运行保障管理系统</title>
 <link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
+	<style>
+		.result{
+			color:red;
+			font-size:18px;
+			font-weight:500;
+			position:absolute;
+			top:166px;
+			left:480px;
+		}
+	</style>
 <script language="javascript" src="/assets/js/js.js"></script>
 </head>
 <body>
-    <form action="/update" method="post" modelAttribute="user">
+    <form action="/update" method="post" modelAttribute="mima">
         <div style="width:30%;margin: 0 auto; margin-top:15px; ">
 		  <table class="table11">
 		    <tr>
@@ -21,7 +31,7 @@
 		    </tr>
 		    <tr>
 		      <td style="text-align:right;">旧密码</td>
-		      <td style="text-align:left;"><input name="oldPass" type="password" style="width:85%;" >      </td>
+		      <td style="text-align:left;"><input name="oldpass" type="password" style="width:85%;" >      </td>
 		    </tr>
 		    <tr>
 		      <td style="text-align:right;">新密码</td>
@@ -36,6 +46,10 @@
 		        &nbsp;&nbsp;
 		        <input name="Submit2222" type="submit"  onclick="javascript:history.go(-1)" value="返 回" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" />      </td>
 		    </tr>
+		    <%
+		    	String msg =(String)session.getAttribute("msg1");
+		    %>
+		    <%if(msg!=null) {%><span class="result"><%=msg %></span><%} %>
 		  </table>
 		</div>
     </form>

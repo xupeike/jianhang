@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import cn.edu.uestc.jianhang.entity.Mima;
 import cn.edu.uestc.jianhang.entity.User;
 import cn.edu.uestc.jianhang.service.Interfaces.UserInfoService;
 
@@ -38,20 +39,31 @@ public class LoginController {
 	}
 	
 	@RequestMapping("/update")
-	public String updateInfo(@ModelAttribute("user") User user,HttpSession session){
+	public String updateInfo(@ModelAttribute("mima") Mima mima,HttpSession session){
 		
-		System.out.println(user.getPassword());
-		
-		User us = (User)session.getAttribute("user");
-		if(us.getPassword().equals(user.getPassword())){
-			String msg1="密码修改失败，请重新操作!";
+		System.out.println(mima.getOldpass());
+		System.out.println(mima.getPassword());
+		System.out.println(mima.getRepass());
+		String msg1;
+		User user = (User)session.getAttribute("user");
+		if(!mima.getOldpass().equals(user.getPassword())){
+			msg1="旧密码不正确!";
+			session.setAttribute("msg1", msg1);
+			return "personalSetup";
+		}else if(!mima.getPassword().equals(mima.getRepass())){
+			msg1 = "两次新密码输入不一致";
 			session.setAttribute("msg1", msg1);
 			return "personalSetup";
 		}
-		user.setAccount(us.getAccount());
 		
 		
-		boolean r = userInfoService.changePsw(user);
+		User us =new User();
+		us.setAccount(user.getAccount());
+		us.setPassword(mima.getPassword());
+		//mima.setAccount(us.getAccount());
+		
+		
+		boolean r = userInfoService.changePsw(us);
 		
 		return "transQuery";
 	}
