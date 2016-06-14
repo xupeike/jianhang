@@ -9,7 +9,7 @@
 <link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form name="myform" method="post">
+<form name="myform" method="post" action="/">
 <table class="table11"  style="width:900px;margin-top:15px;">
   <tr>
     <th colspan="6" style="text-align:center;">选填新需求详细信息</th>
@@ -26,12 +26,8 @@
     </td>
     <td align="right">事务明细</td>
     <td colspan="3">
-	<select name="smalllocation">
-		<option value="-1" selected="selected">请选择</option>
-        <option value="1">网点</option>
-        <option value="2">办公</option>
-		<option value="3">电子</option>
-    </select>	</td>
+		<input type="text" name=""/>
+		</td>
   </tr>
   <tr>
     <td align="right">服务保障级别</td>
